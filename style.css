@@ -1,0 +1,13 @@
+.bg{
+    background: url(img/food.jpeg) ;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    
+    }
+
+img{ width: 100%;
+
+}
+
+
