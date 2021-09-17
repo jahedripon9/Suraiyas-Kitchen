@@ -1,12 +1,19 @@
-const searchBtn = document.getElementById("button-search");
+// const searchBtn = document.getElementById("button-search");
+// const searchField = document.getElementById("search-field");
+
+// searchField.addEventListener("keypress", function(event) {
+//     // event.preventDefault();
+//     if (event.key == 'Enter')
+//         searchBtn.click();
+// });
+
+
 const searchField = document.getElementById("search-field");
-
-searchField.addEventListener("keypress", function(event) {
-    // event.preventDefault();
-    if (event.keyCode == 13)
-        searchBtn.click();
+searchField.addEventListener("keypress", function onEvent(event) {
+    if (event.key === "Enter") {
+        document.getElementById("button-search").click();
+    }
 });
-
 
 const searchFood = () => {
     const searchField = document.getElementById('search-field');
